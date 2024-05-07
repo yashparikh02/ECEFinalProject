@@ -1,0 +1,14 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+DeclarationError: Event with same name and parameter types defined twice.
+  --> gpt3_5_p4_t3_3.sol:22:5:
+   |
+22 |     event Approval(address indexed owner, address indexed spender, uint256 value);     
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Other declaration is here:
+  --> gpt3_5_p4_t3_3.sol:13:5:
+   |
+13 |     event Approval(address indexed owner, address indexed spender, uint256 value); 
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+

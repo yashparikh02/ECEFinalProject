@@ -1,0 +1,39 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+TypeError: Contract "MyERC20Token" should be marked as abstract.
+  --> gpt4_p4_t6_10.sol:16:1:
+   |
+16 | contract MyERC20Token is IERC20 {
+   | ^ (Relevant source part starts here and spans across multiple lines).
+Note: Missing implementation: 
+ --> gpt4_p4_t6_10.sol:8:5:
+  |
+8 |     function allowance(address owner, address spender) external view returns (uint256);
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Missing implementation: 
+ --> gpt4_p4_t6_10.sol:9:5:
+  |
+9 |     function approve(address spender, uint256 amount) external returns (bool);
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Missing implementation: 
+ --> gpt4_p4_t6_10.sol:6:5:
+  |
+6 |     function balanceOf(address account) external view returns (uint256);
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Missing implementation: 
+ --> gpt4_p4_t6_10.sol:5:5:
+  |
+5 |     function totalSupply() external view returns (uint256);
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Missing implementation: 
+ --> gpt4_p4_t6_10.sol:7:5:
+  |
+7 |     function transfer(address recipient, uint256 amount) external returns (bool);
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Missing implementation: 
+  --> gpt4_p4_t6_10.sol:10:5:
+   |
+10 |     function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+

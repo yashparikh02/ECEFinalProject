@@ -1,0 +1,9 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+ParserError: Expected ';' but got ':'
+  --> gpt4_p2_t4_7.sol:14:12:
+   |
+14 | Please note: This URL from the above is correct at the time of writing but it could change. 
+   |            ^
+
+

@@ -1,0 +1,23 @@
+'solc --version' running
+'solc gpt3_5_p3_t6_8.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/content' running
+INFO:Detectors:[92m
+Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- DataLocationChangeInInternalOverride
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- SignedImmutables
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching.
+ It is used by:
+	- gpt3_5_p3_t6_8.sol#3
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity[0m
+INFO:Detectors:[92m
+Variable ERC20._totalSupply (gpt3_5_p3_t6_8.sol#9) is too similar to ERC20.constructor(string,string,uint8,uint256).totalSupply_ (gpt3_5_p3_t6_8.sol#16)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#variable-names-too-similar[0m
+INFO:Detectors:[92m
+ERC20._totalSupply (gpt3_5_p3_t6_8.sol#9) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable[0m
+INFO:Slither:gpt3_5_p3_t6_8.sol analyzed (1 contracts with 95 detectors), 3 result(s) found

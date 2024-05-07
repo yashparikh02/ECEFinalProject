@@ -1,0 +1,14 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+DeclarationError: Identifier already declared.
+  --> gpt3_5_p1_t1_10.sol:33:5:
+   |
+33 |     function totalSupply() public view override returns (uint256) {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+Note: The previous declaration is here:
+  --> gpt3_5_p1_t1_10.sol:20:5:
+   |
+20 |     uint256 public totalSupply;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+

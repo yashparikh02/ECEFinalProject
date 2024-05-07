@@ -1,0 +1,31 @@
+'solc --version' running
+'solc gpt4_p1_t1_2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/content' running
+INFO:Detectors:[92m
+Version constraint ^0.8.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+.
+ It is used by:
+	- gpt4_p1_t1_2.sol#2
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity[0m
+INFO:Detectors:[92m
+Parameter MyToken.transfer(address,uint256)._to (gpt4_p1_t1_2.sol#31) is not in mixedCase
+Parameter MyToken.transfer(address,uint256)._value (gpt4_p1_t1_2.sol#31) is not in mixedCase
+Parameter MyToken.approve(address,uint256)._spender (gpt4_p1_t1_2.sol#39) is not in mixedCase
+Parameter MyToken.approve(address,uint256)._value (gpt4_p1_t1_2.sol#39) is not in mixedCase
+Parameter MyToken.transferFrom(address,address,uint256)._from (gpt4_p1_t1_2.sol#45) is not in mixedCase
+Parameter MyToken.transferFrom(address,address,uint256)._to (gpt4_p1_t1_2.sol#45) is not in mixedCase
+Parameter MyToken.transferFrom(address,address,uint256)._value (gpt4_p1_t1_2.sol#45) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions[0m
+INFO:Detectors:[92m
+MyToken.slitherConstructorVariables() (gpt4_p1_t1_2.sol#4-54) uses literals with too many digits:
+	- totalSupply = 1000000000000000000000000 (gpt4_p1_t1_2.sol#7)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits[0m
+INFO:Detectors:[92m
+MyToken.decimals (gpt4_p1_t1_2.sol#8) should be constant 
+MyToken.name (gpt4_p1_t1_2.sol#5) should be constant 
+MyToken.symbol (gpt4_p1_t1_2.sol#6) should be constant 
+MyToken.totalSupply (gpt4_p1_t1_2.sol#7) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant[0m
+INFO:Detectors:[92m
+MyToken.owner (gpt4_p1_t1_2.sol#9) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable[0m
+INFO:Slither:gpt4_p1_t1_2.sol analyzed (1 contracts with 95 detectors), 14 result(s) found

@@ -1,0 +1,13 @@
+'solc --version' running
+'solc gpt4_p3_t4_8.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/content' running
+Compilation warnings/errors on gpt4_p3_t4_8.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> gpt4_p3_t4_8.sol
+
+Warning: Source file does not specify required compiler version! Consider adding "pragma solidity ^0.8.25;"
+--> gpt4_p3_t4_8.sol
+
+
+INFO:SlitherSolcParsing:No contracts were found in None, check the correct compilation
+WARNING:Slither:[91mNo contract was analyzed[0m
+INFO:Slither:gpt4_p3_t4_8.sol analyzed (0 contracts with 95 detectors), 0 result(s) found

@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract MyToken is ERC20 {
+    constructor(uint256 initialSupply) ERC20("MyToken", "MTK") {
+        _mint(msg.sender, initialSupply);
+    }
+}
+```
+
+Please remember that in order to use this solution, you need to have the OpenZeppelin contracts installed in your project using npm (Node.js package manager) or Yarn:
+
+```
+npm install @openzeppelin/contracts
+
+// or
+
+yarn add @openzeppelin/contracts

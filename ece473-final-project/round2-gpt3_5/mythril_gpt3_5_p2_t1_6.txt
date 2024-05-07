@@ -1,0 +1,9 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+SyntaxError: No visibility specified. Did you intend to add "public"?
+  --> gpt3_5_p2_t1_6.sol:23:5:
+   |
+23 |     function initBalance() {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+

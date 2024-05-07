@@ -1,0 +1,71 @@
+'solc --version' running
+'solc gpt4_p4_t4_4.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/content' running
+Compilation warnings/errors on gpt4_p4_t4_4.sol:
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> gpt4_p4_t4_4.sol:20:24:
+   |
+20 |     function balanceOf(address account) public pure override returns (uint256) {
+   |                        ^^^^^^^^^^^^^^^
+
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> gpt4_p4_t4_4.sol:24:23:
+   |
+24 |     function transfer(address recipient, uint256 amount) public pure override returns (bool) {
+   |                       ^^^^^^^^^^^^^^^^^
+
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> gpt4_p4_t4_4.sol:24:42:
+   |
+24 |     function transfer(address recipient, uint256 amount) public pure override returns (bool) {
+   |                                          ^^^^^^^^^^^^^^
+
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> gpt4_p4_t4_4.sol:28:24:
+   |
+28 |     function allowance(address owner, address spender) public pure override returns (uint256) {
+   |                        ^^^^^^^^^^^^^
+
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> gpt4_p4_t4_4.sol:28:39:
+   |
+28 |     function allowance(address owner, address spender) public pure override returns (uint256) {
+   |                                       ^^^^^^^^^^^^^^^
+
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> gpt4_p4_t4_4.sol:32:22:
+   |
+32 |     function approve(address spender, uint256 amount) public pure override returns (bool) {
+   |                      ^^^^^^^^^^^^^^^
+
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> gpt4_p4_t4_4.sol:32:39:
+   |
+32 |     function approve(address spender, uint256 amount) public pure override returns (bool) {
+   |                                       ^^^^^^^^^^^^^^
+
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> gpt4_p4_t4_4.sol:36:27:
+   |
+36 |     function transferFrom(address sender, address recipient, uint256 amount) public pure override returns (bool) {
+   |                           ^^^^^^^^^^^^^^
+
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> gpt4_p4_t4_4.sol:36:43:
+   |
+36 |     function transferFrom(address sender, address recipient, uint256 amount) public pure override returns (bool) {
+   |                                           ^^^^^^^^^^^^^^^^^
+
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> gpt4_p4_t4_4.sol:36:62:
+   |
+36 |     function transferFrom(address sender, address recipient, uint256 amount) public pure override returns (bool) {
+   |                                                              ^^^^^^^^^^^^^^
+
+
+INFO:Detectors:[92m
+Version constraint ^0.8.24 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+.
+ It is used by:
+	- gpt4_p4_t4_4.sol#2
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity[0m
+INFO:Slither:gpt4_p4_t4_4.sol analyzed (2 contracts with 95 detectors), 1 result(s) found

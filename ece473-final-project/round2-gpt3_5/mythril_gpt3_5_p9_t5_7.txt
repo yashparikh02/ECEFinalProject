@@ -1,0 +1,9 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+TypeError: Member "sub" not found or not visible after argument-dependent lookup in uint256.
+  --> gpt3_5_p9_t5_7.sol:68:27:
+   |
+68 |         balances[_from] = balances[_from].sub(_value);
+   |                           ^^^^^^^^^^^^^^^^^^^
+
+

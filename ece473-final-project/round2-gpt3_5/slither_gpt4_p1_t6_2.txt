@@ -1,0 +1,48 @@
+'solc --version' running
+'solc gpt4_p1_t6_2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/content' running
+Compilation warnings/errors on gpt4_p1_t6_2.sol:
+Warning: This declaration shadows an existing declaration.
+  --> gpt4_p1_t6_2.sol:46:9:
+   |
+46 |         uint256 allowance = allowed[_from][msg.sender];
+   |         ^^^^^^^^^^^^^^^^^
+Note: The shadowed declaration is here:
+  --> gpt4_p1_t6_2.sol:63:5:
+   |
+63 |     function allowance(address _owner, address _spender) public view override returns (uint256 remaining) {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning: Visibility for constructor is ignored. If you want the contract to be non-deployable, making it "abstract" is sufficient.
+  --> gpt4_p1_t6_2.sol:24:5:
+   |
+24 |     constructor(uint256 initialSupply) public {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+INFO:Detectors:[92m
+SimpleERC20.transferFrom(address,address,uint256).allowance (gpt4_p1_t6_2.sol#46) shadows:
+	- SimpleERC20.allowance(address,address) (gpt4_p1_t6_2.sol#63-65) (function)
+	- IERC20.allowance(address,address) (gpt4_p1_t6_2.sol#8) (function)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#local-variable-shadowing[0m
+INFO:Detectors:[92m
+Version constraint ^0.8.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+.
+ It is used by:
+	- gpt4_p1_t6_2.sol#2
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity[0m
+INFO:Detectors:[92m
+Parameter SimpleERC20.balanceOf(address)._owner (gpt4_p1_t6_2.sol#33) is not in mixedCase
+Parameter SimpleERC20.transfer(address,uint256)._to (gpt4_p1_t6_2.sol#37) is not in mixedCase
+Parameter SimpleERC20.transfer(address,uint256)._value (gpt4_p1_t6_2.sol#37) is not in mixedCase
+Parameter SimpleERC20.transferFrom(address,address,uint256)._from (gpt4_p1_t6_2.sol#45) is not in mixedCase
+Parameter SimpleERC20.transferFrom(address,address,uint256)._to (gpt4_p1_t6_2.sol#45) is not in mixedCase
+Parameter SimpleERC20.transferFrom(address,address,uint256)._value (gpt4_p1_t6_2.sol#45) is not in mixedCase
+Parameter SimpleERC20.approve(address,uint256)._spender (gpt4_p1_t6_2.sol#57) is not in mixedCase
+Parameter SimpleERC20.approve(address,uint256)._value (gpt4_p1_t6_2.sol#57) is not in mixedCase
+Parameter SimpleERC20.allowance(address,address)._owner (gpt4_p1_t6_2.sol#63) is not in mixedCase
+Parameter SimpleERC20.allowance(address,address)._spender (gpt4_p1_t6_2.sol#63) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions[0m
+INFO:Detectors:[92m
+SimpleERC20.totalTokenSupply (gpt4_p1_t6_2.sol#19) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable[0m
+INFO:Slither:gpt4_p1_t6_2.sol analyzed (2 contracts with 95 detectors), 13 result(s) found

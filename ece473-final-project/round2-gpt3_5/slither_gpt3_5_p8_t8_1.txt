@@ -1,0 +1,30 @@
+'solc --version' running
+'solc gpt3_5_p8_t8_1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/content' running
+INFO:Detectors:[92m
+Version constraint ^0.8.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- DataLocationChangeInInternalOverride
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- SignedImmutables
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching.
+ It is used by:
+	- gpt3_5_p8_t8_1.sol#2
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity[0m
+INFO:Detectors:[92m
+Parameter ERC20.transfer(address,uint256)._to (gpt3_5_p8_t8_1.sol#37) is not in mixedCase
+Parameter ERC20.transfer(address,uint256)._value (gpt3_5_p8_t8_1.sol#37) is not in mixedCase
+Parameter ERC20.transferFrom(address,address,uint256)._from (gpt3_5_p8_t8_1.sol#42) is not in mixedCase
+Parameter ERC20.transferFrom(address,address,uint256)._to (gpt3_5_p8_t8_1.sol#42) is not in mixedCase
+Parameter ERC20.transferFrom(address,address,uint256)._value (gpt3_5_p8_t8_1.sol#42) is not in mixedCase
+Parameter ERC20.approve(address,uint256)._spender (gpt3_5_p8_t8_1.sol#49) is not in mixedCase
+Parameter ERC20.approve(address,uint256)._value (gpt3_5_p8_t8_1.sol#49) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions[0m
+INFO:Detectors:[92m
+ERC20.decimals (gpt3_5_p8_t8_1.sol#7) should be immutable 
+ERC20.totalSupply (gpt3_5_p8_t8_1.sol#8) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable[0m
+INFO:Slither:gpt3_5_p8_t8_1.sol analyzed (1 contracts with 95 detectors), 10 result(s) found

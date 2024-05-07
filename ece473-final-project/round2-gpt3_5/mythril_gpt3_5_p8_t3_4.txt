@@ -1,0 +1,9 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+TypeError: Immutable variables cannot be read during contract creation time, which means they cannot be read in the constructor or any function or modifier called from it.
+  --> gpt3_5_p8_t3_4.sol:22:47:
+   |
+22 |         emit Transfer(address(0), msg.sender, totalSupply);
+   |                                               ^^^^^^^^^^^
+
+

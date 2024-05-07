@@ -1,0 +1,9 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+ParserError: Expected ';' but got identifier
+  --> gpt4_p4_t2_2.sol:77:10:
+   |
+77 | The only change made is in the import statement. Y ...
+   |          ^^^^^^
+
+

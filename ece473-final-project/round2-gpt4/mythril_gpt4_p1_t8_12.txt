@@ -1,0 +1,9 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+ParserError: Source "@openzeppelin/contracts/token/ERC20/ERC20.sol" not found: File not found.
+ --> gpt4_p1_t8_12.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/token/ERC20/ERC20.sol";   
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+

@@ -1,0 +1,14 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+TypeError: Overriding public state variable is missing "override" specifier.
+  --> gpt3_5_p4_t9_9.sol:20:5:
+   |
+20 |     uint256 public immutable totalSupply;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: Overridden public state variable is here:
+ --> gpt3_5_p4_t9_9.sol:5:5:
+  |
+5 |     function totalSupply() external view returns (uint256);
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+

@@ -1,0 +1,1 @@
+pragma solidity ^0.8.4; to a newer version like pragma solidity ^0.8.7;

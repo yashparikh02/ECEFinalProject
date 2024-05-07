@@ -1,0 +1,9 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+TypeError: Immutable variables cannot have a non-value type.
+ --> gpt3_5_p3_t5_5.sol:5:5:
+  |
+5 |     string private immutable _name;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+

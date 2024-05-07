@@ -1,0 +1,6 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+ParserError: Invalid SPDX license identifier.
+--> gpt4_p2_t9_2.sol
+
+

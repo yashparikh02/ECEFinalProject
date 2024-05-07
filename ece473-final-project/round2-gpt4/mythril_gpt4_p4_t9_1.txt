@@ -1,0 +1,9 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+ParserError: Source "IERC20.sol" not found: File not found. Searched the following locations: "".
+ --> gpt4_p4_t9_1.sol:1:27:
+  |
+1 | pragma solidity ^0.8.24;  import "./IERC20.sol";  contract ERC20 is IERC20 {   mapp ...
+  |                           ^^^^^^^^^^^^^^^^^^^^^^
+
+

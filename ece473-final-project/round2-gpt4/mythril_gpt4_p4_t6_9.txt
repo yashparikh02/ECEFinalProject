@@ -1,0 +1,9 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+ParserError: Expected '{' but got reserved keyword 'implements'
+  --> gpt4_p4_t6_9.sol:16:23:
+   |
+16 | contract MyERC20Token implements IERC20 {
+   |                       ^^^^^^^^^^
+
+

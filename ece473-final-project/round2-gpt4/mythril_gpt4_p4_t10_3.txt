@@ -1,0 +1,9 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+ParserError: Source "IERC20.sol" not found: File not found. Searched the following locations: "".
+ --> gpt4_p4_t10_3.sol:4:1:
+  |
+4 | import "./IERC20.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^
+
+

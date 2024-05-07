@@ -1,0 +1,19 @@
+'solc --version' running
+'solc gpt4_p3_t1_4.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/content' running
+INFO:Detectors:[92m
+Version constraint ^0.8.4 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess
+	- AbiReencodingHeadOverflowWithStaticArrayCleanup
+	- DirtyBytesArrayToStorage
+	- DataLocationChangeInInternalOverride
+	- NestedCalldataArrayAbiReencodingSizeValidation
+	- SignedImmutables.
+ It is used by:
+	- gpt4_p3_t1_4.sol#2
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity[0m
+INFO:Detectors:[92m
+ERC20Token.constructor() (gpt4_p3_t1_4.sol#17-22) uses literals with too many digits:
+	- initialSupply = 1000000 (gpt4_p3_t1_4.sol#18)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits[0m
+INFO:Slither:gpt4_p3_t1_4.sol analyzed (1 contracts with 95 detectors), 2 result(s) found

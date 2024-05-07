@@ -1,0 +1,9 @@
+mythril.interfaces.cli [ERROR]: Solc experienced a fatal error.
+
+ParserError: Expected identifier but got ','
+  --> gpt4_p2_t2_8.sol:12:5:
+   |
+12 | Here, I'm assuming that Solidity compile ...
+   |     ^
+
+

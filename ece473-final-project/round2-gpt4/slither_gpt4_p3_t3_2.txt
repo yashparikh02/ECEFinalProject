@@ -1,0 +1,56 @@
+'solc --version' running
+'solc gpt4_p3_t3_2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/content' running
+Compilation warnings/errors on gpt4_p3_t3_2.sol:
+Warning: This declaration shadows an existing declaration.
+  --> gpt4_p3_t3_2.sol:13:18:
+   |
+13 |     constructor (string memory name, string memory symbol, uint256 totalSupply) {
+   |                  ^^^^^^^^^^^^^^^^^^
+Note: The shadowed declaration is here:
+  --> gpt4_p3_t3_2.sol:21:5:
+   |
+21 |     function name() public view returns (string memory) { return _name; }
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Warning: This declaration shadows an existing declaration.
+  --> gpt4_p3_t3_2.sol:13:38:
+   |
+13 |     constructor (string memory name, string memory symbol, uint256 totalSupply) {
+   |                                      ^^^^^^^^^^^^^^^^^^^^
+Note: The shadowed declaration is here:
+  --> gpt4_p3_t3_2.sol:23:5:
+   |
+23 |     function symbol() public view returns (string memory) { return _symbol; }
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Warning: This declaration shadows an existing declaration.
+  --> gpt4_p3_t3_2.sol:13:60:
+   |
+13 |     constructor (string memory name, string memory symbol, uint256 totalSupply) {
+   |                                                            ^^^^^^^^^^^^^^^^^^^
+Note: The shadowed declaration is here:
+  --> gpt4_p3_t3_2.sol:27:5:
+   |
+27 |     function totalSupply() public view returns (uint256) { return _totalSupply; }
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+INFO:Detectors:[92m
+MyToken.constructor(string,string,uint256).name (gpt4_p3_t3_2.sol#13) shadows:
+	- MyToken.name() (gpt4_p3_t3_2.sol#21) (function)
+MyToken.constructor(string,string,uint256).symbol (gpt4_p3_t3_2.sol#13) shadows:
+	- MyToken.symbol() (gpt4_p3_t3_2.sol#23) (function)
+MyToken.constructor(string,string,uint256).totalSupply (gpt4_p3_t3_2.sol#13) shadows:
+	- MyToken.totalSupply() (gpt4_p3_t3_2.sol#27) (function)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#local-variable-shadowing[0m
+INFO:Detectors:[92m
+Version constraint ^0.8.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+.
+ It is used by:
+	- gpt4_p3_t3_2.sol#2
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity[0m
+INFO:Detectors:[92m
+MyToken._decimals (gpt4_p3_t3_2.sol#11) should be immutable 
+MyToken._totalSupply (gpt4_p3_t3_2.sol#8) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable[0m
+INFO:Slither:gpt4_p3_t3_2.sol analyzed (1 contracts with 95 detectors), 6 result(s) found
